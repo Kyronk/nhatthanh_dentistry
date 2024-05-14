@@ -2,41 +2,24 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
     async up(queryInterface, Sequelize) {
-        await queryInterface.createTable('Bookings', {
+        await queryInterface.createTable('Customers', {
             id: {
                 allowNull: false,
                 autoIncrement: true,
                 primaryKey: true,
                 type: Sequelize.INTEGER
-                // tạm thời id để default tăng theo thứ tự
-                // sau này làm gần xong thì mình sẽ chuyển nó thành UUID
-
             },
             name: {
-                type: Sequelize.STRING,
-                // unique: true,
-                allowNull: false
+                type: Sequelize.STRING
             },
             phone: {
-                type: Sequelize.STRING,
-                unique: true,
-                allowNull: false
-            },
-            date: {
-                type: Sequelize.DATE,
-                allowNullL: false
-            },
-            hour: {
                 type: Sequelize.STRING
             },
-            appointmentTime: {
+            address: {
                 type: Sequelize.STRING
             },
-            description: {
-                type: Sequelize.STRING
-            },
-            status: {
-                type: Sequelize.STRING
+            bookingId: {
+                type: Sequelize.INTEGER
             },
             createdAt: {
                 allowNull: false,
@@ -49,6 +32,6 @@ module.exports = {
         });
     },
     async down(queryInterface, Sequelize) {
-        await queryInterface.dropTable('Bookings');
+        await queryInterface.dropTable('Customers');
     }
 };
