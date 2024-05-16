@@ -1,7 +1,5 @@
-// require("dotenv").config();
-require('dotenv').config();
-// import dotenv from "dotenv";
-// dotenv.config();
+require("dotenv").config();
+
 
 module.exports = {
     development: {
@@ -13,7 +11,6 @@ module.exports = {
         logging: false,
         timezone: "+07:00"
 
-        //env error
         // username: "postgres",
         // password: "1234",
         // database: "dentistry_nhathanh",

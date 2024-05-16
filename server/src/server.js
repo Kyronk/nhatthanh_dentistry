@@ -1,11 +1,10 @@
 const express = require("express");
 require('dotenv').config();
-const dbConnect = require("./src/config/dbConnect");
 const cors = require("cors");
-import initRouters from "./src/routers";
-
-
+const dbConnect = require("./config/connectDB");
+const initRoutes = require("./routes")
 const app = express();
+
 
 
 app.use(cors({
@@ -14,7 +13,7 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-initRouters(app);
+initRoutes(app);
 
 const PORT = process.env.PORT || 4567;
 

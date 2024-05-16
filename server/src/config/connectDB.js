@@ -1,4 +1,5 @@
 const { Sequelize } = require('sequelize');
+// import {Sequelize} from "sequelize";
 
 const sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -22,3 +23,4 @@ const dbConnect = async () => {
 }
 
 module.exports = dbConnect;
+

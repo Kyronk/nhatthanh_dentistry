@@ -1,9 +1,10 @@
 import bookingRoute from "./booking.route";
-
+import doctorRoute from "./doctor.router";
 
 
 const initRouters = (app) => {
     app.use("/api/v1/booking", bookingRoute);
+    app.use("/api/v1/booking", doctorRoute);
 
 
     return app.use("/", (req, res) => {
@@ -11,4 +12,6 @@ const initRouters = (app) => {
     });
 };
 
-export default initRouters;
+// export default initRouters;
+
+module.exports = initRouters;

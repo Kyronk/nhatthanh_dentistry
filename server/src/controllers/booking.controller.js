@@ -1,17 +1,41 @@
-// create booking for customer
-export const createBookingCustomer = (req, res) => {
-    const { id, nameCustomer, phone} = req.body;
+
+const asyncHandler = require("express-async-handler");
+
+const bookingService = require("../services/booking.service");
+
+const createBooking = asyncHandler (async (req, res) => {
     
     try {
+        
+        
 
         return res.status(200).json({
-            test: "ok",
-            router: "get ok booking route"
-        })
+            code: 0,
+            msg: "ok ok"
+        });
     } catch (error) {
-        return res.status(500).json({
-            err: -1,
-            msg: "Failed at post controller" + error
-        })
+        console.log(error)
     }
+})
+
+const getBookingList = asyncHandler (async (req, res) => {
+
+    try {
+        
+        const response = await bookingService.getBookingList();
+
+        return res.status(200).json(response);
+
+        // return res.status(200).json({
+        //     code: 0,
+        //     msg: "test route get list"
+        // })
+    } catch (error) {
+        console.log(error);
+    }
+})
+
+module.exports = {
+    createBooking,
+    getBookingList,
 }
