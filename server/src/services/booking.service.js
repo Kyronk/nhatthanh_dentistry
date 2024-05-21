@@ -1,20 +1,30 @@
 const db = require("../models");
-const asyncHandler = require("express-async-handler");
 
 
-// const getListBookingService = () => asyncHandler(async (resolve, reject) => {
-//     try {
 
+const getListBookingService = ({name, phone, date, hour, description}) => new Promise(async (resolve, reject) => {
+    try {
+        // const response = await db.Booking.findAll();
+    
 
-//         resolve({
-//             err: 0,
-//             msg: "ok ok"
-//         })
+        resolve({
+            err: 0,
+            msg: "ok ok",
+            dataREQ: {
+                name,
+                phone,
+                date,
+                hour,
+                description
+            }
+            // response
+        })
 
-//     } catch (error) {
-//         reject(error);
-//     }
-// });
+    } catch (error) {
+        reject(error);
+    }
+})
+
 
 const getBookingList = () => new Promise(async (resolve, reject) => {
     try {
@@ -35,6 +45,7 @@ const getBookingList = () => new Promise(async (resolve, reject) => {
 
 
 module.exports = {
-    getBookingList
+    getBookingList,
+    getListBookingService
 }
 

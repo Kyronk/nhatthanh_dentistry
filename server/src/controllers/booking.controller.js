@@ -1,18 +1,19 @@
 
 const asyncHandler = require("express-async-handler");
-
 const bookingService = require("../services/booking.service");
 
+// create booking
 const createBooking = asyncHandler (async (req, res) => {
     
+    const { name, phone, date, hour, description } = req.body;
+    
+    
     try {
-        
-        
+        // const response = await bookingService.
+        const response = await bookingService.getListBookingService({name, phone, date, hour, description});
 
-        return res.status(200).json({
-            code: 0,
-            msg: "ok ok"
-        });
+
+        return res.status(200).json(response);
     } catch (error) {
         console.log(error)
     }
