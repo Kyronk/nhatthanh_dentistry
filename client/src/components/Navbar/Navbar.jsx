@@ -17,7 +17,7 @@ const Navbar = () => {
                         <label htmlFor="cancel-btn" className="btn cancel-btn">
                             <i className="fas fa-times"></i>
                         </label>
-                        <li><a href="">Trang chủ</a></li>
+                        {/* <li><a href="">Trang chủ</a></li> */}
                         <li>
                             <a href="" className='desktop-item'>Giới thiệu</a>
                             <input type="checkbox" id="showDrop" />
@@ -41,7 +41,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li>
-                            <a href="" className="desktop-item">Đánh giá </a>
+                            <a href="" className="desktop-item">Kỹ thuật </a>
 
                             <input type="checkbox" id="showMega" />
                             <label htmlFor="showMega" className="mobile-item">Đánh giá</label>
