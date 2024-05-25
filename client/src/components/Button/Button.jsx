@@ -1,8 +1,29 @@
 import React from 'react'
 
-const Button = () => {
+import "./button.css";
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
+
+
+
+const Button = ({
+    children,
+    name,
+    handleOnClick, 
+    style, 
+    iconsBefore, 
+    iconsAfter, 
+    hover,
+    fw, 
+    type = 'button',
+    disabled
+}) => {
     return (
-        <div>Button</div>
+        <button 
+            className='btn-main'
+            >
+            {children}
+        </button>
     )
 }
 

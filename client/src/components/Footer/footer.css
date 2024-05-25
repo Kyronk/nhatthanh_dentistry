@@ -1,1 +1,73 @@
-/*# sourceMappingURL=footer.css.map */
+:root {
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 89%);
+  --backColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --itemCardColor: hsl(120, 5%, 88%);
+  --itemCardHover: hsl(120, 27%, 87%);
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FortSize: 1.5rem;
+  --h2FortSize: 1.25rem;
+  --h3ortSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.footer-main {
+  width: 100%;
+}
+.footer-main .footer-container {
+  max-width: 1250px;
+  background: rgba(233, 220, 220, 0.559);
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.footer-main .footer-container .content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-main .footer-container .content .row {
+  width: 100%;
+  padding: 20px;
+}
+.footer-main .footer-container .content .row img {
+  width: 100%;
+  height: 300px;
+}
+.footer-main .footer-container .content .row .social {
+  display: flex;
+}
+.footer-main .footer-container .content .row .social li {
+  margin: 10px;
+  background: wheat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.footer-main .footer-container .content .row .social li:hover {
+  box-shadow: rgba(69, 139, 209, 0.8) 0px 0px 10px;
+}
+.footer-main .footer-container .content .row .social li a {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .footer-container .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=footer.css.map */

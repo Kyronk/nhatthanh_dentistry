@@ -2,7 +2,7 @@ import React from 'react'
 import { Outlet, Navigate } from "react-router-dom";
 
 
-const HomeLayout = () => {
+const publicLayout = () => {
     return (
         <div>
             {/* navbar */}
@@ -16,4 +16,4 @@ const HomeLayout = () => {
     )
 }
 
-export default HomeLayout
+export default publicLayout;

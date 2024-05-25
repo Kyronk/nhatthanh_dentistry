@@ -1,0 +1,36 @@
+:root {
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 89%);
+  --backColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --itemCardColor: hsl(120, 5%, 88%);
+  --itemCardHover: hsl(120, 27%, 87%);
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FortSize: 1.5rem;
+  --h2FortSize: 1.25rem;
+  --h3ortSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.btn-main {
+  border: 2px solid #bdf094;
+  width: 250px;
+  height: 50px;
+  background: transparent;
+  color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-main:hover {
+  background: var(--HoverColor);
+  color: var(--textColor);
+}/*# sourceMappingURL=button.css.map */

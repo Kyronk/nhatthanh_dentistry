@@ -4,9 +4,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 
 const withBaseComponent = () => {
-  return (
-    <div>withBaseComponent</div>
-  )
+    return (
+        <div>withBaseComponent</div>
+    )
 }
 
 export default withBaseComponent

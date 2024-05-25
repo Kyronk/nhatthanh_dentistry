@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import "./slider.css";
 
 // import image
-import img1 from "../../assets/p1.jpg";
-import img2 from "../../assets/p2.jpg";
-import img3 from "../../assets/p3.jpg";
-import img4 from "../../assets/p4.jpg";
-import img5 from "../../assets/p5.jpg";
+import img1 from "../../../assets/slider/p1.jpg";
+import img2 from "../../../assets/slider/p2.jpg";
+import img3 from "../../../assets/slider/p3.jpg";
+import img4 from "../../../assets/slider/p4.jpg";
+import img5 from "../../../assets/slider/p5.jpg";
 
 
 const dataSlider = [

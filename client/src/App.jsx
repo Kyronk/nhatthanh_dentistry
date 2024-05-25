@@ -5,7 +5,7 @@ import './App.css'
 
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
-import Slider from './components/Slider/Slider';
+import Slider from './components/Common/Slider/Slider';
 import Footer from './components/Footer/Footer';
 
 
@@ -14,19 +14,19 @@ function App() {
 
     return (
         <div>
-
             <Navbar />
+            {/* 
             <Slider />
-            <Footer />
-                {/* route public */}
-            {/* <Routes>
+            <Footer /> */}
 
+                {/* route public */}
+                <Routes>
                 
                 <Route path='/'>
 
                 </Route>
 
-            </Routes> */}
+            </Routes>
         </div>
     )
 }
