@@ -1,33 +1,49 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+
+import './App.css';
+
+import path from './utils/path';
 
 import { Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar';
-import Slider from './components/Common/Slider/Slider';
-import Footer from './components/Footer/Footer';
+
+//  import page
+import { 
+    HomePage, 
+    PublicLayout,
+    Introduce,
+    ServicePage,
+    ContactPage,
+    PriceListPage,
+    TechniquePage,
+} from "./pages/public";
+
+
 
 
 function App() {
-    const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
 
     return (
-        <div>
-            <Navbar />
+        <>
             {/* 
             <Slider />
             <Footer /> */}
 
+            <Routes>
                 {/* route public */}
-                <Routes>
-                
-                <Route path='/'>
+                <Route path={path.PUBLIC_LAYOUT} element={<PublicLayout />}   >
+                    <Route path={path.HOME} element={<HomePage />} />
+                    <Route path={path.GIOI_THIEU} element={<Introduce />} />
+                    <Route path={path.DICH_VU} element={<ServicePage />} />
+                    <Route path={path.KY_THUAT} element={<TechniquePage />} />
+                    <Route path={path.BANG_GIA} element={<PriceListPage />} />
+                    <Route path={path.THONG_TIN_TU_VAN} element={<ContactPage />} />
 
                 </Route>
 
             </Routes>
-        </div>
+        </>
     )
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
-
+import { Link, useNavigate } from "react-router-dom"
 import "./navbar.css";
+
+import path from '../../utils/path';
 
 const Navbar = () => {
     return (
@@ -8,7 +10,9 @@ const Navbar = () => {
             <nav>
 
                 <div className='wrapper'>
-                    <div className="logo"><a href="">Logo</a></div>
+                    <div className="logo">
+                        <Link to={`/${path.HOME}`}>Logo</Link>
+                    </div>
 
                     <input type="radio" name="slide" id="menu-btn" />
                     <input type="radio" name="slide" id="cancel-btn" />
@@ -19,7 +23,7 @@ const Navbar = () => {
                         </label>
                         {/* <li><a href="">Trang chủ</a></li> */}
                         <li>
-                            <a href="" className='desktop-item'>Giới thiệu</a>
+                            <Link to={`/${path.GIOI_THIEU}`} className='desktop-item'>Giới thiệu</Link>
                             <input type="checkbox" id="showDrop" />
                             <label htmlFor="showDrop" className="mobile-item" >Giới thiệu</label>
                             <ul className="drop-menu">
@@ -30,7 +34,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li>
-                            <a href="" className="desktop-item">Dịch vụ</a>
+                            <Link to={`/${path.DICH_VU}`} className="desktop-item">Dịch vụ</Link>
                             <input type="checkbox" id="showDrop" />
                             <label htmlFor="showDrop" className="mobile-item" >Đánh giá</label>
                             <ul className="drop-menu">
@@ -41,7 +45,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li>
-                            <a href="" className="desktop-item">Kỹ thuật </a>
+                            <Link to={`/${path.KY_THUAT}`} className="desktop-item">Kỹ thuật </Link>
 
                             <input type="checkbox" id="showMega" />
                             <label htmlFor="showMega" className="mobile-item">Đánh giá</label>
@@ -85,8 +89,8 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </li>
-                        <li><a href="">Bảng giá</a></li>
-                        <li><a href="">Thông tin liên hệ và tư vấn</a></li>
+                        <li><Link to={`/${path.BANG_GIA}`}>Bảng giá</Link></li>
+                        <li><Link to={`/${path.THONG_TIN_TU_VAN}`}>Thông tin liên hệ và tư vấn</Link></li>
                         <li><a href="">Góp ý</a></li>
 
                     </ul>
@@ -102,4 +106,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
