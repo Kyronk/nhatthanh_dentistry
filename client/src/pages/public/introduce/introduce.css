@@ -1,5 +1,9 @@
 .introduce-container {
   margin-top: 100px;
-  height: 200px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1000px;
   background: rgba(157, 184, 50, 0.502);
+  display: flex;
 }/*# sourceMappingURL=introduce.css.map */
