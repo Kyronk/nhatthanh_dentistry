@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, useNavigate } from "react-router-dom"
-import "./navbar.css";
+import "./navbar_1.css";
 
 import path from '../../utils/path';
 
-const Navbar = () => {
+const Navbar_1 = () => {
     return (
         <>
             <nav>
@@ -106,4 +106,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default Navbar_1;

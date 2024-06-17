@@ -1,0 +1,41 @@
+.fixbact-main {
+  max-width: 1190px;
+  margin: 50px auto 199px auto;
+  background: rgba(34, 36, 39, 0.046);
+}
+.fixbact-main .fixbact-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fixbact-main .fixbact-title h5 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 50px auto 10px auto;
+}
+.fixbact-main .fixbact-title h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.fixbact-main .fixbact-title::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: rgba(129, 40, 40, 0.422);
+  margin-top: 10px;
+}
+.fixbact-main .fixbact-box {
+  margin-top: 20px;
+  width: 300px;
+}
+.fixbact-main .fixbact-box .fixbact-content {
+  margin: 10px;
+}
+.fixbact-main .fixbact-box .fixbact-content .fixbact-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=fixbact_style.css.map */

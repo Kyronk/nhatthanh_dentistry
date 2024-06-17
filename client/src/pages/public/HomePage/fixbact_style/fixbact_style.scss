@@ -1,0 +1,59 @@
+.fixbact-main {
+    max-width: 1190px;
+    margin: 50px auto 199px auto;
+    background: rgba(34, 36, 39, 0.046);
+
+    .fixbact-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h5 {
+            font-size: 20px;
+            font-weight: 100;
+            margin: 50px auto 10px auto;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        &::after {
+            content: "";
+            width: 100px;
+            height: 2px;
+            background: rgba(129, 40, 40, 0.422);
+            margin-top: 10px;
+        }
+    }
+
+    // form comment
+    .fixbact-box{
+        margin-top: 20px;
+        width: 300px;
+
+        .fixbact-content{
+
+            margin: 10px;
+
+            .fixbact-img{
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    
+
+}

@@ -7,6 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 
 const Button = ({
+    classNameCustom,
     children,
     name,
     handleOnClick, 
@@ -20,7 +21,8 @@ const Button = ({
 }) => {
     return (
         <button 
-            className='btn-main'
+            // className='btn-main'
+            className={classNameCustom ? classNameCustom : "btn-main" }
             >
             {children}
         </button>

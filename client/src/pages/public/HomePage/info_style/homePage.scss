@@ -1,0 +1,125 @@
+.home-main{
+    // background: yellow;
+    max-width: 95%;
+    margin: auto;
+    .home-info-container{
+        .home-info-img{
+            
+            // position: relative;
+            // opacity: 1.1;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            // margin: 2rem auto 3rem;
+            // border-radius: 50%;
+            overflow: hidden;
+            display: grid;
+            margin: auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                // margin: 20px;
+            }
+
+        }
+
+        .home-info-content{
+            background: rgba(115, 255, 0, 0.42);
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            
+            .home-info-title{
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            h2{
+                margin: auto;
+                text-align: center;
+            }
+
+            p{
+                margin: 20px;
+                text-align: start;
+                font-size: 17px;
+                line-height: 25px;
+
+                span{
+                    font-weight: 700;
+                }
+            }
+
+            .home-info-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // button{
+                //     display: flex;
+                // }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    .home-main{
+        width: 85%;
+        margin: auto;
+
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home-main{
+        margin-top: 10px;
+        width: 90%;
+        .home-info-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            margin: auto;
+
+            .home-info-img{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .home-info-content{
+                
+                .home-info-title{
+                    text-align: start;
+                }
+
+                h2{
+                    text-align: start;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .home-main{
+        width: 1170px;
+        .home-info-container{
+            
+        }
+    }
+}
+
+

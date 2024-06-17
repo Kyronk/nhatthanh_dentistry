@@ -1,19 +1,19 @@
 import React from 'react'
 import { Outlet, Navigate } from "react-router-dom";
 
-import { Navbar, Footer } from '../../../components';
+import { Navbar_1, Footer } from '../../../components';
 
 const PublicLayout = () => {
     return (
         <>
             {/* navbar */}
-            <Navbar />
+            <Navbar_1 />
             <>
                 <h3>outlet content</h3>
                 <Outlet />
             </>
 
-            <Footer/>
+            {/* <Footer/> */}
         </>
     )
 }

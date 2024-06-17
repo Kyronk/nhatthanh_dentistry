@@ -1,0 +1,98 @@
+.home-service-main {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.home-service-main .home-service-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+}
+.home-service-main .home-service-title::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: red;
+  margin-top: 10px;
+}
+.home-service-main .home-service-container {
+  background: rgba(191, 139, 139, 0.428);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.home-service-main .home-service-container .home-service-box {
+  max-width: 600px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(253, 98, 98, 0.825);
+  display: flex;
+  padding: 5px;
+}
+.home-service-main .home-service-container .home-service-box .home-service-img {
+  display: flex;
+  align-items: center;
+}
+.home-service-main .home-service-container .home-service-box .home-service-img img {
+  width: 200px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 5px;
+}
+.home-service-main .home-service-container .home-service-box .home-service-text h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.home-service-main .home-service-container .home-service-box .home-service-text p {
+  margin: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .home-service-main .home-service-container .home-service-box {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .home-service-main .home-service-container .home-service-box {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 955px) {
+  .home-service-main .home-service-container .home-service-box {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 886px) {
+  .home-service-main .home-service-container .home-service-box {
+    display: block;
+    max-width: unset;
+  }
+  .home-service-main .home-service-container .home-service-box .home-service-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .home-service-main .home-service-container .home-service-box .home-service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .home-service-main .home-service-container .home-service-box .home-service-text h3 {
+    margin-top: 20px;
+  }
+  .home-service-main .home-service-container .home-service-box .home-service-text p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=serviceStyle.css.map */
